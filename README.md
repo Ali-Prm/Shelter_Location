@@ -23,9 +23,9 @@ The model is formulated using the open-source `Pyomo` package, and it is solved 
 
 ## Notations
 
-1. $ l \in L:  Index \space of \space scenarios$
-2. $ j \in J:  Index \space of \space candidate \space node \space for \space shelters$
-3. $ i \in I:  Index \space of \space nodes \space hit$
+1. $l \in L:  Index \space of \space scenarios$
+2. $j \in J:  Index \space of \space candidate \space node \space for \space shelters$
+3. $i \in I:  Index \space of \space nodes \space hit$
 ------------------------
 
 ## Parameters
