@@ -61,3 +61,9 @@ $\quad \quad \sum_{i} Y^l_{i,j} \leq c_j W^l_j \quad \quad \forall j \in J, \for
 $\quad \quad \sum_{j} Y^l_{i,j} \leq h^l_i \quad \quad \forall i \in I, \forall l \in L$
 
 $\quad \quad \sum_{j} Y^l_{i,j} + Z^l_i =  h^l_i \quad \quad \forall i \in I, \forall l \in L$
+
+
+---------------------------------
+
+## Files info:
+1. The `Shelter_Location.ipynb` files contains the implementation and the results of the model for the case study. 
