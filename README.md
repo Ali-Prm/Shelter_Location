@@ -5,6 +5,7 @@ The problem is formulated as the `P-Median model`, which makes the location and 
 2.  After a hurricane scenario, **the second stage** is to select the shelters outside the affected zone to prepare to open and allocate evacuees to these shelters.
 
 The model is formulated using the open-source `Pyomo` package, and it is solved using `cbc` solver.
+------------------------
 
 
 ## Assumptions
@@ -19,6 +20,7 @@ The model is formulated using the open-source `Pyomo` package, and it is solved 
 7. Due to the number of present personnel, only a specific number of shelters can be opened in a given scenario.
 8. Shelters in affected zones cannot be opened in each scenario.
 
+---------------------------
 
 
 ## Notations
@@ -26,7 +28,6 @@ The model is formulated using the open-source `Pyomo` package, and it is solved 
 1. $l \in L:  Index \space of \space scenarios$
 2. $j \in J:  Index \space of \space candidate \space node \space for \space shelters$
 3. $i \in I:  Index \space of \space nodes \space hit$
-------------------------
 
 ## Parameters
 1. $P$ maximum numbers of shelters can be located 
@@ -37,7 +38,7 @@ The model is formulated using the open-source `Pyomo` package, and it is solved 
 6. $t_{i,j}$ Travel time between node $i$ and node $j$
 7. $p_l$ probability of each scenario
 7. $\gamma$ assumed travel time for the people not accommodated in shelters.
-----------------------------
+
 
 ## Decision Variables
 1. $X_j$ a binary decsion variable to be one if a shelter is located at site $j$ and zero otherwise.
