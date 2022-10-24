@@ -32,7 +32,7 @@ The model is formulated using the open-source `Pyomo` package, and it is solved 
 1. $P$ maximum numbers of shelters can be located 
 2. $S$ maximum numbers of shelters can be opened
 3. $c_j$ capacity of shelters (thousand people)
-4. $ h^l_i$ number of evacuees from node $i$ seeking shelters in scenario $l$
+4. $h^l_i$ number of evacuees from node $i$ seeking shelters in scenario $l$
 5. $n^l_j$ binary parameters that shows if shelter at site $j$ is safe to be opened in scenario $l$
 6. $t_{i,j}$ Travel time between node $i$ and node $j$
 7. $p_l$ probability of each scenario
@@ -50,14 +50,14 @@ The model is formulated using the open-source `Pyomo` package, and it is solved 
 
 $\min \quad \gamma \sum_ {l} p_l \sum_ {i} Z^l_i + \sum_ {l} p_l \sum_ {i} \sum_ {j} t_{i,j} Y^l_{i,j}$ 
 
-$\textrm{s.t.} \quad \sum_{j} X_j \leq P $
+$\textrm{s.t.} \quad \sum_{j} X_j \leq P$
 
-$ \quad \quad \sum_{j} W^l_j = S \quad \quad \forall l \in L $
+$\quad \quad \sum_{j} W^l_j = S \quad \quad \forall l \in L$
 
-$ \quad \quad  W^l_j \leq n^l_j X_j \quad \quad \forall j \in J, \forall l \in L$
+$\quad \quad  W^l_j \leq n^l_j X_j \quad \quad \forall j \in J, \forall l \in L$
 
-$ \quad \quad \sum_{i} Y^l_{i,j} \leq c_j W^l_j \quad \quad \forall j \in J, \forall l \in L $
+$\quad \quad \sum_{i} Y^l_{i,j} \leq c_j W^l_j \quad \quad \forall j \in J, \forall l \in L$
 
-$ \quad \quad \sum_{j} Y^l_{i,j} \leq h^l_i \quad \quad \forall i \in I, \forall l \in L $
+$\quad \quad \sum_{j} Y^l_{i,j} \leq h^l_i \quad \quad \forall i \in I, \forall l \in L$
 
-$ \quad \quad \sum_{j} Y^l_{i,j} + Z^l_i =  h^l_i \quad \quad \forall i \in I, \forall l \in L $
+$\quad \quad \sum_{j} Y^l_{i,j} + Z^l_i =  h^l_i \quad \quad \forall i \in I, \forall l \in L$
