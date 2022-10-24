@@ -2,10 +2,12 @@
 The model is a **two-stage stochastic MILP** location-allocation problem.<br>
 The problem is formulated as the `P-Median model`, which makes the location and allocation decisions to **minimize the total system cost**, which is both the total travel time of evacuees finding and not finding shelters.
 1. **The first stage** is to identify the shelters to be maintained over time
-2.  After a hurricane scenario, **the second stage** is to select the shelters outside the affected zone to prepare to open and allocate evacuees to these shelters.
+2.  After a hurricane scenario, **the second stage** is to select the shelters outside the affected zone to prepare to open and allocate evacuees to these shelters. <br>
 
-The model is formulated using the open-source `Pyomo` package, and it is solved using `cbc` solver.
-------------------------
+- The model is formulated using the open-source `Pyomo` package, and it is solved using `cbc` solver.
+
+-----------------------------------------------------------
+
 
 
 ## Assumptions
@@ -20,7 +22,7 @@ The model is formulated using the open-source `Pyomo` package, and it is solved 
 7. Due to the number of present personnel, only a specific number of shelters can be opened in a given scenario.
 8. Shelters in affected zones cannot be opened in each scenario.
 
----------------------------
+-----------------------------------------------------------------------
 
 
 ## Notations
