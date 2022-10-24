@@ -1,6 +1,6 @@
 ## Problem Statement
 The model is a **two-stage stochastic MILP** location-allocation problem.<br>
-The problem is formulated as `P-Median model` which makes the location and allocation decisions to **minimize the total system cost**, which are both total travel time of evacuees finding and not finiding shelters.
+The problem is formulated as the `P-Median model`, which makes the location and allocation decisions to **minimize the total system cost**, which is both the total travel time of evacuees finding and not finding shelters.
 1. **The first stage** is to identify the shelters to be maintained over time
 2.  After a hurricane scenario, **the second stage** is to select the shelters outside the affected zone to prepare to open and allocate evacuees to these shelters.
 
@@ -8,13 +8,13 @@ The model is formulated using the open-source `Pyomo` package, and it is solved 
 
 
 ## Assumptions
-1. We implement the model in Tehran network consisting of 693 traffic zones, and the centroid of each zone is considered as node.
+1. We implement the model in the Tehran network consisting of 693 traffic zones, and each zone's centroid is considered a node.
 2. In the first stage, every node can be a candidate for locating shelters.
-3. We generate scenrio using the following approach: <br>
-- We choose a specific number of zones randomly to be hit by hurricane, and every zones in a predifined vicinity of them are also affected by the hurricane. <br>
-- We assume that a specific percetange of population in each affected zone need shelters and are considered as evacuees.
-4. Each shelter has predefined capacity for the total number of poeple accomadated in them.
-5. It may not be possible to accomadate all the people in a given scenario.
+3. We generate a scenario using the following approach: <br>
+- We randomly choose a specific number of zones to be hit by a hurricane, and every zone in a predefined vicinity is also affected by the hurricane. <br>
+- We assume that a specific percentage of the population in each affected zone needs shelters and are considered evacuees.
+4. Each shelter has a predefined capacity for the total number of people accommodated in them.
+5. It may not be possible to accommodate all the people in a given scenario.
 6. There is a maximum value for the number of located shelters.
 7. Due to the number of present personnel, only a specific number of shelters can be opened in a given scenario.
 8. Shelters in affected zones cannot be opened in each scenario.
@@ -36,7 +36,7 @@ The model is formulated using the open-source `Pyomo` package, and it is solved 
 5. $n^l_j$ binary parameters that shows if shelter at site $j$ is safe to be opened in scenario $l$
 6. $t_{i,j}$ Travel time between node $i$ and node $j$
 7. $p_l$ probability of each scenario
-7. $\gamma$ assumed travel time in for the number of people not accommodated in shelters.
+7. $\gamma$ assumed travel time for the people not accommodated in shelters.
 ----------------------------
 
 ## Decision Variables
