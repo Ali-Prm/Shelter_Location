@@ -58,3 +58,13 @@ $\quad \quad \sum_{i} Y_{i,j} \leq c_j X_j \quad \quad \forall j \in J$
 $\quad \quad \sum_{j} Y_{i,j} + Z_i =  h_i \quad \quad \forall j \in N_i$
 
 $\quad \quad Y_{i,j_1} >= Y_{i,j_2} \quad \quad \forall i \in I, \quad \forall j \in N_i, \quad (j_1, j_2) \in N_j$
+
+
+
+
+###  Objective Function Modified Version
+
+$\min \quad \sum_ {s}(\gamma \sum_ {i} Z^s_i +  \sum_ {i} \sum_ {j} t_{i,j} Y^s_{i,j}) - H^{*s}$
+
+1. $s \in S:$ Demand Scenarios
+2. $H^{*s}$: The optimal Objective value of solving the problem by considering only the scenario s 
