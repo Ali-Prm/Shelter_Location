@@ -103,8 +103,8 @@ The problem is formulated as the `P-Median model`, which makes the location and 
 ## Notations and Sets 
 1. $j \in J:  Index \space of \space candidate \space node \space for \space shelters$
 2. $i \in I:  Index \space of \space nodes \space hit$
-3. $N_i \subseteq J: Subset of i's candid neighbor which are sorted based on ascending order of travle time.$
-4. $N_j \subseteq J: Subset of j's candid neighbor which are sorted based on ascending order of travel time.$
+3. $N_i \subseteq J$: Subset of i's candid neighbor which are sorted based on ascending order of travle time.
+4. $N_j \subseteq J$: Subset of j's candid neighbor which are sorted based on ascending order of travel time.
 
 
 ## Parameters
