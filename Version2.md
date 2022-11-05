@@ -62,9 +62,9 @@ $\quad \quad Y_{i,j_1} >= Y_{i,j_2} \quad \quad \forall i \in I, \quad \forall j
 
 
 
-###  Objective Function Modified Version
+###  Modified Version of Objective Function
 
 $\min \quad \sum_ {s}(\gamma \sum_ {i} Z^s_i +  \sum_ {i} \sum_ {j} t_{i,j} Y^s_{i,j}) - H^{*s}$
 
 1. $s \in S:$ Demand Scenarios
-2. $H^{*s}$: The optimal Objective value of solving the problem by considering only the scenario s 
+2. $H^{*s}$: The objective function value of solving the problem by considering only the scenario s 
