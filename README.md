@@ -106,4 +106,4 @@ $\quad \quad \sum_{j} Y_{i,j} + Z_i =  h_i \quad \quad \forall j \in N_i$
 - The `base_model.py` is a function that create an instance of the base model. 
 - The `trial_error_model.py` is a function that create an instance of the trial-and-error model. 
 - The `data` contains required data for the study. 
-- The `doc` elaborates on the trial-and-error model with a toy netwerk. 
+- The `doc` elaborates on the trial-and-error model with a toy netwerk. Moreover, a short presentation file is also included. 
