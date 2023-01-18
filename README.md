@@ -84,7 +84,7 @@ $\quad \quad \sum_{j} Y_{i,j} + Z_i =  h_i \quad \quad \forall j \in J$
 
 ### Formulation
 
-$\min \quad \gamma \sum_ {i} Z_i +  \sum_ {i} \sum_ {j} t'_{i,j} Y_{i,j}$ 
+$\min \quad \gamma \sum_ {i} Z_i +  \sum_ {i} \sum_ {j} (t'_{i,j}) Y_{i,j}$
 
 $\textrm{s.t.} \quad \sum_{j} X_j = P$
 
