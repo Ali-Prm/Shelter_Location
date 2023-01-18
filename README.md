@@ -72,7 +72,7 @@ $\quad \quad \sum_{j} Y_{i,j} + Z_i =  h_i \quad \quad \forall j \in J$
 2. $c_j$ capacity of shelters (thousand people)
 3. $h_i$ number of evacuees from node $i$ seeking shelters 
 4. $n_j$ binary parameters that shows if shelter at site $j$ is safe to be opened
-5. $t'_{i,j}$ travel time between demand nodes and candiadate location based on the people's trial-and-error behavior
+5. $tilde{t_{i,j}}$ travel time between demand nodes and candiadate location based on the people's trial-and-error behavior
 6. $\gamma$ assumed travel time for the people not accommodated in shelters.
 
 
@@ -84,7 +84,7 @@ $\quad \quad \sum_{j} Y_{i,j} + Z_i =  h_i \quad \quad \forall j \in J$
 
 ### Formulation
 
-$\min \quad \gamma \sum_ {i} Z_i +  \sum_ {i} \sum_ {j} t_{i,j} Y_{i,j}$ 
+$\min \quad \gamma \sum_ {i} Z_i +  \sum_ {i} \sum_ {j} tilde{t_{i,j}} Y_{i,j}$ 
 
 $\textrm{s.t.} \quad \sum_{j} X_j = P$
 
